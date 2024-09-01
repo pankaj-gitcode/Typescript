@@ -1,5 +1,5 @@
 "use strict";
-const arrowFunc = () => {
+var arrowFunc = function () {
     return [{
             es5: "\"es5\""
         }];
