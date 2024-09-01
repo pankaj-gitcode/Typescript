@@ -1,13 +1,22 @@
 
-// const user = {
-//     firstName: "Raj",
-//     lastName: "kmr",
-//     age:21,
-//     email: "raj@mail.com"
-// }
+//create type for the Object
+interface User {
+    firstName: string,
+    lastName: string,
+    age: number
+    email?: string
+}
+
+//Object user
+const user = {
+    firstName: 'Raj',
+    lastName: 'kmr',
+    age:21,
+    email: 'raj@mail.com'
+}
 
 //create isLegal function
-const isLegal = (user: {firstName: string, age:number})=>{
+const isLegal = (user:User)=>{
     if(user.age > 18){
         console.log(`Hi ${user.firstName}`)
         return true
@@ -15,8 +24,8 @@ const isLegal = (user: {firstName: string, age:number})=>{
     else{return false}
 }
 
-const greet = (user: {firstName:string})=>{
+const greet = (user: User)=>{
     console.log(`Hi ${user.firstName}`);
 }
 
-console.log(isLegal({firstName:'Raj', age:21}), greet({firstName:'kmr'}));
+console.log(isLegal(user), greet(user));
