@@ -10,19 +10,16 @@ const arrFunc = (arr:arryType[])=>{
     console.log(`type is: ${typeof arr}`)
 }
 
-// arrFunc(arrayNum);
-// arrFunc(arrayStr);
-// arrFunc(arryStrNum);
-// arrFunc(arreyBool);
+arrFunc(arrayNum);
+arrFunc(arrayStr);
+arrFunc(arryStrNum);
+arrFunc(arreyBool);
 
-const arrFunc1 = (arr:object)=>{console.log(`type of ${arr} is ${typeof arr}`)}
-// arrFunc1(arrayNum);
+//********************************************************************* */
+const arrFunc1 = (arr:[...typeof arrayNum])=>{console.log(`type of ${arr} is ${typeof arr}`)}
+arrFunc1(arrayNum);
 
 //********************************************************************** */
-type user = {
-    name: string;
-    age:number
-}
 
 const emp = (arr: user[])=>{
     //filter out the user having ag>18
@@ -37,3 +34,7 @@ const empFunc = emp([
 ])
 
 console.log(empFunc)
+type user = {
+    name: string;
+    age:number
+}
